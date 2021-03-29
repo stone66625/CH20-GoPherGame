@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:padding="@dimen/Margins"
+    tools:context=".M2001">
+
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="105sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5sp"
+        android:background="@drawable/score"
+        android:text="@string/zero"
+        android:textAlignment="center"
+        android:textColor="#FFFF0000"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView2"
+        android:layout_toStartOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView1"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole1" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView5"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:layout_toEndOf="@+id/btn_play"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/hole" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/imageView6"
+        android:layout_alignStart="@+id/imageView4"
+        android:layout_marginStart="-22dp"
+        android:layout_marginBottom="-7dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole3" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/imageView3"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="23dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole5" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_marginStart="58dp"
+        android:layout_marginTop="58dp"
+        android:layout_toEndOf="@+id/tscore"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole5" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView7"
+        android:layout_alignEnd="@+id/imageView5"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="-21dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginStart="-30dp"
+        android:layout_marginTop="65dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginStart="-11dp"
+        android:layout_marginTop="343dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="12dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tscore"
+        android:layout_alignStart="@+id/imageView1"
+        android:layout_marginStart="266dp"
+        android:layout_marginTop="358dp"
+        android:contentDescription="@string/contentDesc"
+        android:src="@drawable/mole2" />
+
+    <Button
+        android:id="@+id/btn_play"
+        android:layout_width="160sp"
+        android:layout_height="100sp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:drawable/checkbox_off_background"
+        android:contentDescription="@string/btn_play"
+        android:onClick="btn_play_Click"
+        android:text="@string/btn_play"
+        android:textColor="@android:color/holo_red_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:layout_width="160sp" />
+
+</RelativeLayout>

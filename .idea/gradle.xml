@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/2001_GoPherGame" />
             <option value="$PROJECT_DIR$/2002_SpeechToText" />
+            <option value="$PROJECT_DIR$/2003_SensorListener" />
             <option value="$PROJECT_DIR$/2005_TextToSpeech" />
           </set>
         </option>
